@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+
+    <!-- form = agregar informações em formulário pra tratar o envio -->
+    <form action="" method="">
+      <!-- Reserva uma área do formulário pra agregar -->
+      <fieldset>
+        <!-- Título para fieldset -->
+        <legend>DADOS DE LOGIN</legend>
+
+        <!-- Caixa de nome -->
+
+        <!-- label = texto para dizer o que colocar no input -->
+        <label for="caixaNome">Nome:</label>
+
+        <!-- input = tipo de iteração com usuário -->
+        <input
+          type="text"
+          id="caixaNome"
+          placeholder="Nome"
+          maxlength="30"
+          minlength="10"
+        />
+
+        <br><br>
+
+        <!-- Campo de email -->
+        <label for="endereço">Endereço:</label>
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Digite seu endereço"
+          maxlength="50"
+        />
+
+        <br><br>
+
+        <!-- Campo de senha -->
+        <label for="Cidade">Cidade:</label>
+        <input
+          type="text"
+          name="cidade"
+          id="cidade"
+          placeholder="Digite sua cidade"
+          maxlength="20"
+        />
+
+        <br><br>
+
+        <!-- Caixa de Seleção: várias opções -->
+        <label for="">Cidade:</label>
+        <select name="cidade" id="cidade">
+          <option value="Acre">Acre</option>
+          <option value="Alagoas">Alagoas</option>
+          <option value="Amapa">Amapá</option>
+          <option value="Amazonas">Amazonas</option>
+          <option value="Bahia">Bahia</option>
+          <option value="Ceara">Ceará</option>
+          <option value="Distrito Federal">Distrito Federal</option>
+          <option value="Espirito Santo">Espirito Santo</option>
+          <option value="Goias">Goiás</option>
+          <option value="Maranhao">Maranhão</option>
+          <option value="Mato Grosso">Mato Grosso</option>
+          <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+          <option value="Minas Gerais">Minas Gerais</option>
+          <option value="Para">Pará</option>
+          <option value="Paraiba">Paraíba</option>
+          <option value="Parana">Paraná</option>
+          <option value="Pernambuco">Pernambuco</option>
+          <option value="Piaui">Piauí</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+          <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+          <option value="Rondonia">Rondônia</option>
+          <option value="Roraima">Roraima</option>
+          <option value="Santa Catarina">Santa Catarina</option>
+          <option value="Sao Paulo">São Paulo</option>
+          <option value="Sergipe">Sergipe</option>
+          <option value="Tocantins">Tocantins</option>
+          <option value="none" selected></option>
+        </select>
+
+        <br><br>
+      </fieldset>
+    </form>
+
+    <br />
+
+    <fieldset>
+      <!-- Caixa de Seleção  -->
+      <h3>Dados Profissionais</h3>
+
+      <!-- Tipo Caixa -->
+      <label for="">Natureza do Cargo:</label>
+      <br />
+      <input type="radio" name="cargo1" value="gerencia" /> Gerência
+      <br />
+      <input type="radio" name="cargo2" value="financeiro" /> Financeiro
+      <br />
+      <input type="radio" name="cargo3" value="recepcao" /> Recepção
+      <br />
+      <input type="radio" name="cargo4" value="administrativo" /> Administrativo
+      <br />
+      <input type="radio" name="cargo5" value="juridico" /> Jurídico
+
+      <br><br>
+
+      <label for="curso"> Escolha seu curso </label>
+      <br />
+      <!-- Tipo boliha -->
+      <input type="checkbox" name="curso1" value="computacao" /> Computação
+      <br />
+      <input type="checkbox" name="curso2" value="biologia" /> Biologia
+      <br />
+      <input type="checkbox" name="curso3" value="meio-ambiente" /> Meio
+      Ambiente
+      <br />
+      <input type="checkbox" name="curso4" value="engenharia" /> Engenharia
+      <br />
+      <input type="checkbox" name="curso5" value="historia" /> História
+
+      <br><br>
+
+      <label>
+        Textão:
+        <textarea
+          name="Mini Curriculo"
+          id="mini-curriculo"
+          placeholder="Digite seu curriculo abreviado"
+          cols="100"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+      </label>
+
+      <br><br>
+
+      <input type="submit" value="Enviar" />
+
+      <input type="reset" value="Limpar" />
+    </fieldset>
+  </body>
+</html>
