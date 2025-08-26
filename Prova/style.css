@@ -1,0 +1,42 @@
+body{
+    background-color: #0A4b73;
+    height: 2000px;
+}
+
+header{
+    position: sticky;
+}
+
+#cabecalho{
+    background-color: #2298e1;
+    height: 200px;
+}
+
+#logo{
+  margin: auto;
+  background-image: url(https://vscode.dev/github/lucaswalger/Aula-Gregory/blob/main/Prova/CONTA%20GOTAS/Projeto%20final/Midias/Logos/Conta%20Gotas/logo_conta_gotas.png)
+}
+
+#item-menu{
+    list-style: none;
+    float: right;
+    margin-top: 15px;
+    float: none;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+li:hover {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+}
