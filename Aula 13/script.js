@@ -141,3 +141,34 @@ function brisadeiro(n1, n2){
 var final = brisadeiro(24,30)
 
  console.log("Quantidades de brisadeiros fabricados: ",final);
+
+
+ //EXERCÍCIO CINEMA
+var idade1 = prompt("Idade 1:")
+var idade2 = prompt("Idade 2:")
+
+var valorFinal = 0
+
+//INGrESSO 1
+if(idade1 < 18){
+    valorFinal = valorFinal + 15
+}
+else if(idade1 < 60){
+    valorFinal = valorFinal + 30
+}
+else{
+    valorFinal = valorFinal + 20
+}
+
+//INGRESSO 2
+if(idade2 < 18){
+    valorFinal = valorFinal + 15
+}
+else if(idade2 < 60){
+    valorFinal = valorFinal + 30
+}
+else{
+    valorFinal = valorFinal + 20
+}
+
+console.log("Valor Final: ",valorFinal)
